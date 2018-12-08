@@ -1,0 +1,8 @@
+tail is a program available on Unix, Unix-like systems and FreeDOS used to display the tail end of a text file or piped data.
+By default, tail will output the last 10 lines of its input to the standard output. With command line options, the amount of output and the units (lines, blocks or bytes) may be changed.
+tail has two special command line option -f and -F (follow) that allows a file to be monitored.
+Instead of just displaying the last few lines and exiting, tail displays the lines and then monitors the file.
+As new lines are added to the file by another process, tail updates the display.
+This is particularly useful for monitoring log files.
+Ancient versions of tail poll the file every second by default but tail from the GNU coreutils as of version 7.5 support the inotify infrastructure introduced in Linux kernel version 2.6.13 on August 2005 which only check the file when is notified of changes by the kernel.
+To interrupt tail while it is monitoring, break-in with Ctrl+C.
